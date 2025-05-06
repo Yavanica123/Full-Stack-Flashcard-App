@@ -31,6 +31,12 @@ function App() {
   return (
     <div className="App">
       <h1>Full-Stack Development Flashcards</h1>
+      <h2 className="subtitle">Boost your full-stack skills—one flashcard at a time!</h2>
+      <img
+  src="https://binarapps.com/wp-content/uploads/2020/12/3.What-is-Full-Stack-Web-Development-.png"
+  alt="Banner"
+  className="carousel-image"
+/>
       
       {/* Flashcards display */}
       <div className="card-grid">
