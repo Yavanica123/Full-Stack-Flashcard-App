@@ -16,12 +16,33 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* SUBTITLE */
+.subtitle {
+  color: #d1aaff;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* BANNER IMAGE */
+.carousel-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin: 20px auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
 /* FORM */
 form {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 form input {
@@ -68,7 +89,8 @@ form button:hover {
 }
 
 /* SHARED CARD FACE STYLE */
-.card .front, .card .back {
+.card .front,
+.card .back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -84,17 +106,22 @@ form button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* INDIVIDUAL COLORS FOR FRONT FACES */
-.card:nth-child(1) .front { background-color: #ff4757; } /* Bright red */
-.card:nth-child(2) .front { background-color: #1e90ff; } /* Dodger blue */
-.card:nth-child(3) .front { background-color: #2ed573; } /* Bright green */
-.card:nth-child(4) .front { background-color: #ffa502; } /* Orange */
-.card:nth-child(5) .front { background-color: #e84393; } /* Pink */
-.card:nth-child(6) .front { background-color: #00cec9; } /* Aqua */
-.card:nth-child(7) .front { background-color: #fd79a8; } /* Bright pink */
-.card:nth-child(8) .front { background-color: #6c5ce7; } /* Violet */
-.card:nth-child(9) .front { background-color: #fab1a0; } /* Soft coral */
-.card:nth-child(10) .front { background-color: #ffeaa7; color: #000; } /* Yellow with dark text for contrast */
+/* DEFAULT FRONT COLOR (for new cards beyond 10) */
+.card .front {
+  background-color: #6c5ce7; /* Soft lavender purple */
+}
+
+/* INDIVIDUAL COLORS FOR FIRST 10 CARDS */
+.card:nth-child(1) .front { background-color: #ff4757; }
+.card:nth-child(2) .front { background-color: #1e90ff; }
+.card:nth-child(3) .front { background-color: #2ed573; }
+.card:nth-child(4) .front { background-color: #ffa502; }
+.card:nth-child(5) .front { background-color: #e84393; }
+.card:nth-child(6) .front { background-color: #00cec9; }
+.card:nth-child(7) .front { background-color: #fd79a8; }
+.card:nth-child(8) .front { background-color: #6c5ce7; }
+.card:nth-child(9) .front { background-color: #fab1a0; color: #000; }
+.card:nth-child(10) .front { background-color: #ffeaa7; color: #000; }
 
 /* BACK FACE */
 .card .back {
@@ -111,7 +138,7 @@ form button:hover {
   transform: rotateY(360deg);
 }
 
-/* NAVIGATION BAR */
+/* OPTIONAL NAVIGATION BAR STYLES (if used) */
 nav {
   background-color: #111111;
   padding: 15px 0;
@@ -140,21 +167,3 @@ nav a:hover {
   color: #a020f0;
   border-bottom: 2px solid #a020f0;
 }
-.subtitle {
-  color: #d1aaff;
-  font-style: italic;
-  margin-top: -10px;
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-.carousel-image {
-  width: 100%;
-  
-  height: 500px;
-  object-fit: cover;
-  margin: 20px auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
